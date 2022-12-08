@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("ACkJa7BDhuztuDV5S");
+   })();
+</script>
+</head>
+<body>
+    <!-- Start Loading section -->
+    <!-- <div id="loading"></div> -->
+    <!-- End Loading section -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+        <a class="navbar-brand" href="#index.html">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars navbar-toggler-icon fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active p-2 p-lg-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            </ul>
+            <a href="signup.html" class="btn btn-danger rounded-pill main-btn">Log in</a>   
+                
+        </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Form -->
+    <!-- <div class="container borfer mt-3 bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>Get In Touch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt temporibus culpa sint eum? </p>
+            </div>
+            <div class="col-md-6 py-3">
+                <h1>Contact Form</h1>
+                <form>
+                    <div class="form-group pt-3">
+                        <h5 for="name">Name</h5>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group pt-3">
+                        <h5 for="email">Email</h5>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group pt-3">
+                        <h5 for="message">Message</h5>
+                        <textarea id="message" row="4" class="form-control"></textarea>
+                    </div>
+                    <button class="btn btn-primary mt-3 text-uppercase" onclick="sendMail()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Form -->
+
+    <div class="container border mt-3 bg-light">
+        <div class="row">
+          <div class="col-md-6 py-3 text-black">
+            <div  class="map text-center" id="map">
+                    <h3 class="mb-3 pt-3">Google Map</h3>
+                <iframe class="justify-content-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.61021380987617!2d31.40783093514821!3d31.060684963220133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d0442098037%3A0x1f0f6ad7f607946!2z2YXYudix2LYg2KfZhNmF2LXYsdmJINmE2YTYs9mK2LHYp9mF2YrZgw!5e0!3m2!1sar!2seg!4v1670181452187!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 border-left py-3">
+            <h1>Stay In Touch</h1>
+            <div class="form-group pb-3">
+              <h5 for="name">Name</h5>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
+            </div>
+            <div class="form-group pb-3">
+              <h5 for="email">Email</h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group pb-3">
+              <h5 for="message">Message</h5>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>

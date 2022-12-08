@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Template</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Loading section -->
+    <div id="loading"></div>
+    <!-- End Loading section -->
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars navbar-toggler-icon "></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active p-2 p-lg-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#stuff">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="search d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass ps-3 pe-3 "></i>
+            </div>
+            <a href="signup.html" class="btn btn-danger rounded-pill main-btn">Log in</a>   
+                  
+          </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Landing -->
+    <div class="landing position-relative d-flex justify-content-center align-items-center">
+        <div class="text-center text-light">
+            <!-- Toggle night and day mood -->
+            <button class="position-absolute btn-info " onclick="colorToggle()">Night/Day</button>
+            <h1 class="fw-normal wow animate__bounce">Taste The Creativtiy</h1>
+            <p class="fs-6 mb-5 text-uppercase wow animate__flipInX">We make awesome graphic and web design</p>
+            <a href="#" class="btn btn-danger pe-5 ps-5 rounded-pill main-btn">Get Started</a>
+        </div>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start features -->
+    <div id="services" class="features text-center pt-5 pb-5 pl-3 pr-3">
+        <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                <img class="mb-4"src="images/title.png" alt="">
+                <h2>We are Good at</h2>
+                <p class="text-black-50 text-uppercase">Some Of These Stuff Under</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInRight">
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+                            <i class="fa-solid fa-4x fa-pen position-absolute bottom-0 icon"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+                        <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInRight">
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+                            <i class="fa-solid fa-display position-absolute bottom-0 icon fa-4x"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+                        <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 wow animate__fadeInLeft">
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+                            <i class="fa-solid fa-plug position-absolute bottom-0 icon fa-4x"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase">Graphic Design</h4>
+                        <p class="text-black-50 lh-lg">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End features -->
+
+    <!-- Start Our Work -->
+    <div id="portfolio" class="our-work text-center pt-5 pb-5">
+        <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                <img class="mb-4"src="images/title.png" alt="">
+                <h2>We Make This</h2>
+                <p class="text-black-50 text-uppercase">Prepare To Be Amazed</p>
+            </div>
+                <ul class="switcher list-unstyled d-flex justify-content-center mt-5 mb-5">
+                    <li class="active rounded-pill" data-cat=".all">All</li>
+                    <li data-cat=".front">Front-End</li>
+                    <li data-cat=".back">Back-End</li>
+                    <li data-cat=".full">Full Stack</li>
+                </ul>
+            <div class="gallery">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-01.jpg" alt="" class="img-fluid all front">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-02.jpg" alt="" class="img-fluid all back">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-03.jpg" alt="" class="img-fluid all front">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-04.jpg" alt="" class="img-fluid all full">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-05.jpg" alt="" class="img-fluid all back">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-06.jpg" alt="" class="img-fluid all full">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-07.jpg" alt="" class="img-fluid all front">
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 wow animate__bounceIn">
+                        <div class="box mb-3 bg-white position-relative" data-work="Application">
+                            <img src="images/work-08.jpg" alt="" class="img-fluid all back">
+                        </div>
+                    </div> 
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <a href="#" class="btn main-btn rounded-pill btn-danger text-uppercase">i wan't more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Work -->
+
+    <!-- Start Stuff -->
+    <div id="stuff" class="stuff pt-5">
+        <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                <img class="mb-4"src="images/title.png" alt="">
+                <h2>Some Stuff About Us</h2>
+                <p class="text-black-50 text-uppercase fw-bold">the great team</p>
+            </div>
+            <p class="desc mb-5 text-center text-black-50 m-auto">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            <div class="row d-flex align-items-center text-center text-lg-start">
+                <div class="col-lg-4 mb-4 wow animate__slideInLeft">
+                    <h3>Retina Design</h3>
+                    <p class="text-black-50">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+                    <p class="text-black-50">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                    <a href="#" class="btn main-btn rounded-pill btn-danger text-uppercase">order me one<a></a>
+                </div>
+                <div class="col-lg-8 wow animate__slideInRight">
+                    <div class="image">
+                        <img src="images/laptop.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Stuff -->
+
+    <!-- Start Team -->
+    <div id="team" class="team text-center pt-5 pb-5">
+        <div class="container pt-5 pb-5">
+            <div class="">
+                <h2 class="fw-bold">Meet The Team</h2>
+                <p class="text-black-50 mb-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            </div>
+            <div class="row  pb-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 wow animate__pulse">
+                    <div class="card bg-white">
+                        <img src="images/team-1.png" alt="" class="img-fluid">
+                        <h3 class="text-light p-3">Luke Skywalker</h3>
+                        <blockquote class="p-3 pb-1 text-black-50 fw-bold">I don't understand how we got by those troops. I thought we were dead.</blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 wow animate__pulse">
+                    <div class="card bg-white">
+                        <img src="images/team-2.png" alt="" class="img-fluid">
+                        <h3 class="text-light p-3">Luke Skywalker</h3>
+                        <blockquote class="p-3 pb-1 text-black-50 fw-bold">I don't understand how we got by those troops. I thought we were dead.</blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 wow animate__pulse">
+                    <div class="card bg-white">
+                        <img src="images/team-3.png" alt="" class="img-fluid">
+                        <h3 class="text-light p-3">Luke Skywalker</h3>
+                        <blockquote class="p-3 pb-1 text-black-50 fw-bold">I don't understand how we got by those troops. I thought we were dead.</blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 wow animate__pulse">
+                    <div class="card bg-white">
+                        <img src="images/team-4.png" alt="" class="img-fluid">
+                        <h3 class="text-light p-3">Luke Skywalker</h3>
+                        <blockquote class="p-3 pb-1 text-black-50 fw-bold">I don't understand how we got by those troops. I thought we were dead.</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+
+    <!-- Start Technology -->
+    <div class="tech pt-5 pb-5 text-center">
+        <div class="container pt-4 pb-4">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <img src="images/tech-1.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <img src="images/tech-2.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <img src="images/tech-3.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <img src="images/tech-4.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                    <img src="images/tech-2.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-2">
+                    <img src="images/tech-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Technology -->
+
+    <!-- Start Project -->
+    <div class="project text-center text-light pt-5 pb-5">
+            <div class="text">
+                <h2>Start Your Project Now</h2>
+                <p class="text-white-50">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
+                <a href="#" class="btn main-btn rounded-pill btn-danger text-uppercase mb-5 mt-4">start project</a>
+            </div>
+    </div>
+    <!-- End Project -->
+
+    <!-- Start Blog -->
+     <div class="blog pt-5 pb-5">
+        <div class="container">
+            <div class="main-title text-center mt-5 mb-5 position-relative">
+                <img class="mb-4"src="images/title.png" alt="">
+                <h2>Read Our Blog</h2>
+                <p class="text-black-50 text-uppercase fw-bold">new stories</p>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12 col-md-6 col-lg-4 wow animate__pulse">
+                    <div class="card">
+                        <img src="images/blog-1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <span class="text-black-50">Jan 17 2022</span>
+                            <h5 class="card-title">Some Awesome Blog Tile here</h5>
+                        </div>
+                    </div>
+                </div> 
+                <div class=" col-sm-12 col-md-6 col-lg-4 wow animate__pulse">
+                    <div class="card">
+                        <img src="images/blog-2.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <span class="text-black-50">Jan 17 2022</span>
+                            <h5 class="card-title">Some Awesome Blog Tile here</h5>
+                        </div>
+                    </div>
+                </div> 
+                <div class=" col-sm-12 col-md-6 col-lg-4 wow animate__pulse">
+                    <div class="card">
+                        <img src="images/blog-3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <span class="text-black-50">Jan 17 2022</span>
+                            <h5 class="card-title">Some Awesome Blog Tile here</h5>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="btn main-btn rounded-pill btn-danger text-uppercase mb-5 mt-4">more stories</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog -->
+
+    <!-- Start News Letter -->
+    <div class="news text-center pt-5 pb-5 text-md-start">
+        <div class="container">
+            <form class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <div class="fw-bold fs-5 mb-3">Subscribe to our Newsletter:</div>
+                </div>
+                <div class="col-md-6 col-lg-7 mp-5">
+                    <input type="text" placeholder="Enter Your Email" class="w-100 text-light bg-transparent p-2">
+                </div>
+                <div class="col-lg-2 col-md-6 text-center mt-4">
+                    <input type="submit" value="Subscribe" class="btn rounded-pill">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End News Letter -->
+
+    <!-- Start Footer -->
+    <div id="contact" class="footer pt-5 pb-5 text-white-50   text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div>
+                        <img class="mb-4" src="images/logo.png" alt="">
+                        <p class="">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                        <p class="mb-1">Created By <span class="sp-1">Graphberry</span></p>
+                        <p class="mb-5">&copy; 2022 - <span class="sp-2">Bondi Inc</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                    <ul class="list-unstyled lh-lg mb-5">
+                        <h5 class="text-light">Links</h5>
+                        <div class="">
+                            <li>Home</li>
+                            <li>Our Services</li>
+                            <li>Portfolio</li>
+                            <li>Testimonials</li>
+                            <li>Support</li>
+                            <li>Terms and Condition</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2">
+                    <ul class="list-unstyled lh-lg mb-5">
+                        <h5 class="text-light">About us</h5>
+                        <div>
+                            <li>Register</li>
+                            <li>Sign In</li>
+                            <li>About us</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div>
+                        <h5 class="text-light">Contact Us</h5>
+                        <p class="text-white-50">Get in touch with us via mail phone.We are waiting for your call or message</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn main-btn rounded-pill btn-danger text-uppercase mb-5 mt-4 w-100">companyname@company.com</a>
+                    </div>
+                    <ul class="d-flex list-unstyled gap-5 text-sm-center">
+                        <li><a href="#" class="d-block text-light"><i class="fa-brands fa-facebook facebook rounded-circle P-2"></i></a></li>
+                        <li><a href="#" class="d-block text-light"><i class="fa-brands fa-twitter twitter rounded-circle P-2"></i></a></li>
+                        <li><a href="#" class="d-block text-light"><i class="fa-brands fa-linkedin-in linkedin rounded-circle P-2"></i></a></li>
+                        <li><a href="#" class="d-block text-light"><i class="fa-brands fa-youtube youtube rounded-circle P-2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Start Google Map --> 
+    <div  class="map text-center pt-5 pb-5" id="map">
+        <div class="container">
+            <h3 class="mb-3">Google Map</h3>
+        <iframe class="justify-content-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.61021380987617!2d31.40783093514821!3d31.060684963220133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d0442098037%3A0x1f0f6ad7f607946!2z2YXYudix2LYg2KfZhNmF2LXYsdmJINmE2YTYs9mK2LHYp9mF2YrZgw!5e0!3m2!1sar!2seg!4v1670181452187!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- End Google Map -->
+
+    <!-- Start Date Display -->
+    <div class="date text-center pt-5 pb-5">
+        <h2 class="text-center">Date Display</h2>
+        <span id="am-pm"></span>
+        <h1 id="clock" onload="showTime()"></h1>
+    </div>
+    <!-- End Date Display -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
